@@ -1,0 +1,35 @@
+[project]
+name = "polyfem-ml"
+version = "0.1.0"
+description = "Machine learning surrogates for triangular mesh impact simulation."
+authors = [
+    {name = "Jiacheng Zhao", email = "jiachengzhao@uvic.ca"},
+]
+requires-python = ">=3.12"
+
+# Pinned to the versions used to produce the thesis numbers, with compatible
+# upper bounds (~=) so minor patches still work but a major bump won't break
+# reproducibility silently.
+dependencies = [
+    "numpy~=2.4",
+    "pandas~=2.3",
+    "scikit-learn~=1.8",
+    "xgboost~=3.2",
+    "torch~=2.11",
+    "matplotlib~=3.10",
+    "joblib~=1.5",
+    "tqdm~=4.67",
+]
+
+[project.optional-dependencies]
+dev = [
+    "ruff",
+    "pytest",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["polyfem_ml"]

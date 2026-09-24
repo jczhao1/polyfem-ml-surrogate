@@ -1,0 +1,184 @@
+{
+  "metadata": {
+    "script": "02_proper_cv_htheta.py",
+    "seed": 42,
+    "n_folds": 5,
+    "elapsed_s": 1258.2,
+    "config": {
+      "hidden": 512,
+      "n_layers": 6,
+      "n_epochs": 400,
+      "lr": 0.0005,
+      "weight_decay": 1e-05,
+      "batch_size": 512,
+      "grad_clip": 1.0,
+      "warmup_epochs": 30,
+      "ramp_window": 40,
+      "patience_checks": 40,
+      "check_every": 20
+    }
+  },
+  "n_samples": 9653,
+  "dL_dh": {
+    "fold_metrics": [
+      {
+        "sign_acc": 98.3,
+        "r2_log": 0.9752,
+        "acc10": 61.9,
+        "acc20": 75.9,
+        "acc50": 89.0,
+        "mape": 30.2
+      },
+      {
+        "sign_acc": 98.8,
+        "r2_log": 0.967,
+        "acc10": 62.2,
+        "acc20": 75.6,
+        "acc50": 89.7,
+        "mape": 39.1
+      },
+      {
+        "sign_acc": 98.8,
+        "r2_log": 0.9623,
+        "acc10": 61.8,
+        "acc20": 74.1,
+        "acc50": 88.0,
+        "mape": 67.8
+      },
+      {
+        "sign_acc": 98.5,
+        "r2_log": 0.973,
+        "acc10": 61.6,
+        "acc20": 75.8,
+        "acc50": 88.3,
+        "mape": 30.4
+      },
+      {
+        "sign_acc": 98.6,
+        "r2_log": 0.9666,
+        "acc10": 60.1,
+        "acc20": 74.9,
+        "acc50": 89.1,
+        "mape": 33.1
+      }
+    ],
+    "mean": {
+      "sign_acc": 98.6,
+      "r2_log": 0.9688,
+      "acc10": 61.5,
+      "acc20": 75.3,
+      "acc50": 88.8,
+      "mape": 40.1
+    },
+    "std": {
+      "sign_acc": 0.2,
+      "r2_log": 0.0047,
+      "acc10": 0.7,
+      "acc20": 0.7,
+      "acc50": 0.6,
+      "mape": 14.2
+    }
+  },
+  "dL_dtheta": {
+    "fold_metrics": [
+      {
+        "sign_acc": 94.7,
+        "r2_log": 0.7804,
+        "acc10": 32.6,
+        "acc20": 48.7,
+        "acc50": 70.9,
+        "mape": 137.0
+      },
+      {
+        "sign_acc": 94.7,
+        "r2_log": 0.763,
+        "acc10": 32.0,
+        "acc20": 47.0,
+        "acc50": 73.0,
+        "mape": 105.2
+      },
+      {
+        "sign_acc": 94.7,
+        "r2_log": 0.7604,
+        "acc10": 30.7,
+        "acc20": 45.8,
+        "acc50": 69.8,
+        "mape": 81.6
+      },
+      {
+        "sign_acc": 95.1,
+        "r2_log": 0.7826,
+        "acc10": 29.3,
+        "acc20": 45.5,
+        "acc50": 72.3,
+        "mape": 592.5
+      },
+      {
+        "sign_acc": 94.7,
+        "r2_log": 0.7685,
+        "acc10": 30.3,
+        "acc20": 45.5,
+        "acc50": 71.2,
+        "mape": 129.1
+      }
+    ],
+    "mean": {
+      "sign_acc": 94.8,
+      "r2_log": 0.771,
+      "acc10": 31.0,
+      "acc20": 46.5,
+      "acc50": 71.4,
+      "mape": 209.1
+    },
+    "std": {
+      "sign_acc": 0.2,
+      "r2_log": 0.009,
+      "acc10": 1.2,
+      "acc20": 1.2,
+      "acc50": 1.1,
+      "mape": 192.7
+    },
+    "per_region_oof": [
+      {
+        "region": "[60,75)",
+        "n": 2908,
+        "regime": "Smooth",
+        "sign_acc": 98.6,
+        "acc20": 51.7,
+        "acc10": 40.9
+      },
+      {
+        "region": "[75,85)",
+        "n": 1915,
+        "regime": "Smooth",
+        "sign_acc": 97.5,
+        "acc20": 50.0,
+        "acc10": 35.5
+      },
+      {
+        "region": "[85,91)",
+        "n": 1120,
+        "regime": "Transition",
+        "sign_acc": 94.4,
+        "acc20": 48.8,
+        "acc10": 31.0
+      },
+      {
+        "region": "[91,100)",
+        "n": 1710,
+        "regime": "Hardest",
+        "sign_acc": 90.6,
+        "acc20": 40.5,
+        "acc10": 20.7
+      },
+      {
+        "region": "[100,111)",
+        "n": 2000,
+        "regime": "Hard",
+        "sign_acc": 90.2,
+        "acc20": 39.5,
+        "acc10": 21.1
+      }
+    ]
+  }
+}

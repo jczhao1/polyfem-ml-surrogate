@@ -1,0 +1,80 @@
+{
+  "metadata": {
+    "script": "01_proper_cv_dLdE.py",
+    "seed": 42,
+    "n_folds": 5,
+    "elapsed_s": 796.8,
+    "config": {
+      "hidden": 512,
+      "n_layers": 6,
+      "n_epochs": 400,
+      "lr": 0.0005,
+      "weight_decay": 1e-05,
+      "batch_size": 512,
+      "grad_clip": 1.0,
+      "warmup_epochs": 30,
+      "ramp_window": 40,
+      "patience_checks": 40,
+      "check_every": 20
+    }
+  },
+  "fold_metrics": [
+    {
+      "sign_acc": 96.8,
+      "r2_log": 0.9689,
+      "acc10": 52.2,
+      "acc20": 70.0,
+      "acc50": 86.9,
+      "mape": 45.1
+    },
+    {
+      "sign_acc": 96.6,
+      "r2_log": 0.9672,
+      "acc10": 50.7,
+      "acc20": 68.7,
+      "acc50": 87.7,
+      "mape": 56.6
+    },
+    {
+      "sign_acc": 96.7,
+      "r2_log": 0.968,
+      "acc10": 53.6,
+      "acc20": 70.0,
+      "acc50": 87.6,
+      "mape": 61.8
+    },
+    {
+      "sign_acc": 97.6,
+      "r2_log": 0.9592,
+      "acc10": 49.6,
+      "acc20": 66.1,
+      "acc50": 86.1,
+      "mape": 60.3
+    },
+    {
+      "sign_acc": 96.9,
+      "r2_log": 0.966,
+      "acc10": 50.9,
+      "acc20": 66.9,
+      "acc50": 85.4,
+      "mape": 44.5
+    }
+  ],
+  "mean": {
+    "sign_acc": 96.9,
+    "r2_log": 0.9659,
+    "acc10": 51.4,
+    "acc20": 68.3,
+    "acc50": 86.7,
+    "mape": 53.7
+  },
+  "std": {
+    "sign_acc": 0.4,
+    "r2_log": 0.0035,
+    "acc10": 1.4,
+    "acc20": 1.6,
+    "acc50": 0.9,
+    "mape": 7.4
+  },
+  "n_samples": 8606
+}
